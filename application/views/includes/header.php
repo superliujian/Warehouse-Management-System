@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+<head>
+  <title>Eden Ways</title>
+  <meta charset="utf-8">
+  <link href="<?php echo base_url(); ?>assets/css/admin/global.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand">Eden Ways</a>
+	      <ul class="nav">
+	      	<li <?php if($this->uri->segment(2) == 'release'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/release">Release stock</a>
+	        </li>
+	        <li <?php if($this->uri->segment(2) == 'products'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/products">Products</a>
+	        </li>
+	        <li <?php if($this->uri->segment(2) == 'stock'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/stock">Incoming stock</a>
+	        </li>
+	        <li <?php if($this->uri->segment(2) == 'clients'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/clients">Clients</a>
+	        </li>
+	        <li <?php if($this->uri->segment(2) == 'payments'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/payments">Payments</a>
+	        </li>
+	        <li <?php if($this->uri->segment(2) == 'expense'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/expense">Expenses</a>
+	        </li>
+
+	        <!--<li <?php if($this->uri->segment(2) == 'report'){echo 'class="active"';}?>>
+	          <a href="<?php echo base_url(); ?>admin/reports/4">Reports</a>
+	        </li> -->
+	        
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li>
+	              <a href="<?php echo base_url(); ?>admin/change_password">Change Password</a>
+	            </li>
+	            <li>
+	              <a href="<?php echo base_url(); ?>admin/logout">Logout</a>
+	            </li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>	
