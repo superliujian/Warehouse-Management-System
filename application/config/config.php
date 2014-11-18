@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/warehouse';
+$config['base_url']	= 'http://localhost/warehouse-management-system';
 
 /*
 |--------------------------------------------------------------------------
